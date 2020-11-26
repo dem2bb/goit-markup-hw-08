@@ -1,0 +1,155 @@
+.current {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: $blue-text-color;
+        border-radius: 2px;
+        height: 4px;
+        margin-top: 20px;
+        width: 100%;
+        bottom: -32px;
+    }
+}
+
+.icon-block {
+    display: inline-block;
+    margin-right: 10px;
+
+    &-email {
+        height: 12px;
+        width: 16px;
+        fill: $secondary-text-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-tel {
+        height: 16px;
+        width: 10px;
+        fill: $secondary-text-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LOGO*/
+.logoblue {
+    color: $blue-text-color;
+}
+
+.logo {
+    color: #000000;
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $blue-text-color;
+    }
+}
+
+/*SITE NAV*/
+.site-nav {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-left: 93px;
+
+    & a {
+        display: block;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    & a {
+        color: $primary-text-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & a:focus,
+    & a:hover {
+        color: $blue-text-color;
+    }
+
+    & .current {
+        color: $blue-text-color;
+    }
+}
+
+
+
+.nav-item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+/*AUTH NAV*/
+.auth-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+
+
+    & .item {
+        margin-right: 50px;
+    }
+
+    & .item:last-child {
+        margin-right: 0;
+    }
+
+    & a {
+        color: $secondary-text-color;
+        display: flex;
+        align-items: center;
+
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & a:focus .icon-block svg,
+    & a:hover .icon-block svg,
+    & a:focus,
+    & a:hover {
+        fill: $blue-text-color;
+        color: $blue-text-color;
+    }
+}
+
+.section-title {
+    color: $primary-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+}

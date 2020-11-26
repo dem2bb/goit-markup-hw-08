@@ -1,0 +1,188 @@
+.logo-footer {
+    color: $white-text-color;
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $blue-text-color;
+    }
+}
+
+
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+
+    &-address {
+        margin: 9px 0;
+        display: inline-block;
+    }
+
+
+    &-tel {
+        display: block;
+    }
+
+    &-mainblock {
+        display: flex;
+    }
+
+    &-firstblock {
+        width: 231px;
+    }
+
+    &-secondblock {
+        padding-top: 12px;
+        margin-left: 70px;
+        width: 206px;
+    }
+
+    &-thirdblock {
+        margin-left: 93px;
+        padding-top: 12px;
+        width: 570px;
+    }
+
+    &-subscribe {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+}
+
+.footer-nav a {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.street-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white-text-color;
+    font-style: normal;
+}
+
+
+.join-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-text-color;
+    margin-bottom: 20px;
+}
+
+.icon-footer {
+    height: 20px;
+    width: 20px;
+    fill: $white-text-color;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 206px;
+
+    &-item {
+        margin-right: 10px;
+    }
+
+    &-item:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover svg,
+    &:hover,
+    &:focus svg,
+    &:focus {
+        background-color: $blue-text-color;
+    }
+}
+
+
+
+
+
+.subscribe-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: $white-text-color;
+}
+
+.button-subscribe {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    color: $white-text-color;
+    background-color: $blue-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.subscribe-form {
+    font-size: 16px;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
+}
+
+.icon-telegram {
+    padding-left: 10px;
+    fill: $white-text-color;
+}
+
+.email {
+    min-width: 358px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

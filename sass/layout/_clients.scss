@@ -1,0 +1,38 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.clients-link {
+    height: 90px;
+    width: 170px;
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
+    border-radius: 4px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover svg,
+    &:hover,
+    &:focus svg,
+    &:focus {
+        fill: $blue-text-color;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $blue-text-color;
+    }
+}
