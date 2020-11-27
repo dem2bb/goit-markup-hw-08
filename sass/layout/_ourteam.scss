@@ -1,84 +1,140 @@
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 16px;
-    margin-bottom: 30px;
-}
+  .ourteam {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background: #f5f4fa;
 
-.icon-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
-    margin-right: 10px;
-    fill: #afb1b8;
-
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:hover svg,
-    &:focus,
-    &:focus svg {
-        background-color: $blue-text-color;
-        fill: $white-text-color;
-    }
-}
+      &-title {
+          color: var(--primary-text-color);
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 1.17;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 30px;
+      }
 
 
-.icon-social {
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
+      & .ourteam-item {
+          margin: 0;
+          padding: 0;
+          display: block;
+      }
 
-    &:last-child {
-        margin-right: 0px;
-    }
-}
+      & .section-title {
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 10px;
+      }
+
+      &-who {
+          color: $secondary-text-color;
+          font-size: 16px;
+          line-height: 1.18;
+          text-align: center;
+          margin-top: 0;
+      }
+
+  }
+
+  .cards {
+      background: $white-text-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      max-width: 450px;
+      margin-right: 0;
+      margin-bottom: 30px;
+  }
+
+  .social-links {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 16px;
+      padding-bottom: 24px;
+  }
+
+  .icon-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      height: 44px;
+      width: 44px;
+      margin-right: 10px;
+      fill: #afb1b8;
+
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:hover svg,
+      &:focus,
+      &:focus svg {
+          background-color: $blue-text-color;
+          fill: $white-text-color;
+      }
+  }
 
 
-
-.ourteam {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background: #f5f4fa;
-
-    & .ourteam-item {
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    & .section-title {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    &-who {
-        color: $secondary-text-color;
-        font-size: 16px;
-        line-height: 1.18;
-        text-align: center;
-        margin-top: 0;
-    }
-
-}
+  .icon-social {
+      height: 20px;
+      width: 20px;
+  }
 
 
-.cards {
-    background: $white-text-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    margin-right: 30px;
+  @media screen and (min-width:768px) {
+      .cards {
+          max-width: 354px;
 
-    &:last-child {
-        margin-right: 0;
-    }
-}
+          &:nth-child(2n+1) {
+              margin-right: 30px;
+          }
+      }
+
+      .ourteam {
+          & .ourteam-item {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+          }
+      }
+  }
+
+
+  @media screen and (min-width:1200px) {
+
+      .ourteam {
+          padding-top: 94px;
+          padding-bottom: 94px;
+
+          & .ourteam-item {
+              margin: 0;
+              padding: 0;
+              display: flex;
+          }
+
+          &-title {
+              font-size: 36px;
+              line-height: 1.16;
+              text-align: center;
+              margin-bottom: 50px;
+          }
+      }
+
+      .cards {
+          width: 270px;
+          margin-right: 30px;
+
+          &:last-child {
+              margin-right: 0;
+          }
+      }
+
+      .social-links {
+          margin-bottom: 30px;
+          padding-bottom: 0;
+      }
+  }
