@@ -141,7 +141,7 @@ img {
   background-color: #2196f3;
   border-radius: 2px;
   height: 4px;
-  width: 68px;
+  width: 100%;
   bottom: 0;
 }
 
@@ -178,7 +178,7 @@ img {
 }
 
 .site-navi a {
-  display: block;
+  display: inline-block;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -316,7 +316,6 @@ img {
 }
 
 .hero {
-  height: 400px;
   min-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -325,8 +324,6 @@ img {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 
 .hero-title {
@@ -367,19 +364,47 @@ img {
 }
 
 .center {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 600px;
     max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .center {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   -title {
     font-size: 44px;
