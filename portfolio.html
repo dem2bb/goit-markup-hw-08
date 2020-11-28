@@ -52,7 +52,7 @@
 
 
   <!--MAIN-->
-  <!-- <main>
+  <main>
     <section class="main-cont">
       <div class="container">
         <ul class="buttons-portfolio">
@@ -65,7 +65,19 @@
         <ul class="portfolio">
           <li class="flext-item">
             <a href="">
-              <div class="overthumb"> <img src="./images/portfolio1.jpg" alt="Tehnokryak" width="370"> </div>
+              <div class="overthumb">
+                <picture>
+                  <source srcset="./images/portfolio/portfolio-pc1.jpg 1x, ./images/portfolio/portfolio-pc1@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                  <source
+                    srcset="./images/portfolio/portfolio-tablet1.jpg 1x, ./images/portfolio/portfolio-tablet1@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="./images/portfolio/portfolio-mobile1.jpg 1x, ../images/portfolio/portfolio-mobile1@2x.jpg 2x"
+                    media="(min-width: 320px)">
+                  <img src="./images/portfolio1.jpg" alt="Tehnokryak">
+                </picture>
+              </div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Технокряк</h2>
                 <p class="portfolio-whatis">Вебсайт</p>
@@ -73,28 +85,28 @@
             </a>
           </li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio2.jpg" alt="Basketball" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio2.jpg" alt="Basketball"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio-whatis">Дизайн</p>
               </div>
             </a></li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370"></div>
-              <div class="portfolio-block">
+              <div class="overthumb"><img src="./images/portfolio3.jpg" alt="Ресторан Seafood""></div>
+              <div class=" portfolio-block">
                 <h2 class="portfolio-title">Ресторан Seafood</h2>
                 <p class="portfolio-whatis">Приложение</p>
               </div>
             </a></li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio4.jpg" alt="Проект Prime" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio4.jpg" alt="Проект Prime"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Проект Prime</h2>
                 <p class="portfolio-whatis">Маркетинг</p>
               </div>
             </a></li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio5.jpg" alt="Проект Boxes"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Проект Boxes</h2>
                 <p class="portfolio-whatis">Приложение</p>
@@ -102,7 +114,7 @@
             </a></li>
           <li class="flext-item">
             <a href="">
-              <div class="overthumb"><img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370">
+              <div class="overthumb"><img src="./images/portfolio6.jpg" alt="Inspiration has no Borders">
               </div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Inspiration has no Borders</h2>
@@ -110,21 +122,21 @@
               </div>
             </a></li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio7.jpg" alt="Издание Limited Edition"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Издание Limited Edition</h2>
                 <p class="portfolio-whatis">Дизайн</p>
               </div>
             </a> </li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio8.jpg" alt="Проект LAB" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio8.jpg" alt="Проект LAB"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Проект LAB</h2>
                 <p class="portfolio-whatis">Маркетинг</p>
               </div>
             </a></li>
           <li class="flext-item"><a href="">
-              <div class="overthumb"><img src="./images/portfolio9.jpg" alt="Growing Business" width="370"></div>
+              <div class="overthumb"><img src="./images/portfolio9.jpg" alt="Growing Business"></div>
               <div class="portfolio-block">
                 <h2 class="portfolio-title">Growing Business</h2>
                 <p class="portfolio-whatis">Приложение</p>
@@ -134,7 +146,7 @@
         <a href=""></a>
       </div>
     </section>
-  </main> -->
+  </main>
   <!--FOOTER-->
   <footer class="footer">
     <div class="container footer-mainblock">
