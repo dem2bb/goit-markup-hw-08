@@ -393,6 +393,11 @@ img {
     background-size: cover;
     background-position: center;
   }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -405,11 +410,6 @@ img {
   .center {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-  -title {
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
   }
 }
 
