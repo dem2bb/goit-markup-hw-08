@@ -126,6 +126,28 @@
  }
 
 
+ @media screen and (min-width:768px) {
+     .buttons-portfolio {
+         display: flex;
+         justify-content: center;
+         margin-bottom: 30px;
+     }
+
+     .button-portfolio {
+         margin-bottom: 0;
+     }
+
+     .portfolio {
+         justify-content: space-between;
+     }
+
+     .flext-item-2 {
+         width: 356px;
+     }
+
+
+ }
+
  //  .main-cont {
  //      padding-top: 94px;
  //      padding-bottom: 94px;
