@@ -72,6 +72,19 @@ img {
   background-color: #ffffff;
 }
 
+.menu-button:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
@@ -85,14 +98,6 @@ img {
 }
 
 .icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
   display: none;
 }
 

@@ -5,6 +5,8 @@
 
 /*MENU-MOBILE*/
 
+
+
 .menu-button {
     display: inline-flex;
     border: none;
@@ -12,6 +14,19 @@
     height: 40px;
     align-items: center;
     background-color: $white-text-color;
+
+    &:focus {
+        fill: $blue-text-color;
+        cursor: pointer;
+    }
+
+    &.is-open .icon-close {
+        display: block;
+    }
+
+    &.is-open .icon-menu {
+        display: none;
+    }
 
     @media screen and (min-width:767px) {
         display: none;
@@ -29,13 +44,7 @@
     display: none;
 }
 
-.menu-button.is-open .icon-close {
-    display: block;
-}
 
-.menu-button.is-open .icon-menu {
-    display: none;
-}
 
 
 .menu-container {
