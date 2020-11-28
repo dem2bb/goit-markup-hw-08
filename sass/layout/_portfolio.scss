@@ -4,7 +4,7 @@
      min-width: 480px;
  }
 
- .portfolio-header {
+ .page-header {
      border-bottom: 1px solid #ececec;
  }
 
@@ -140,13 +140,21 @@
      .portfolio {
          justify-content: space-between;
      }
+ }
 
-     .flext-item-2 {
-         width: 356px;
+ @media screen and (min-width:1200px) {
+     .buttons-portfolio {
+         margin-bottom: 50px;
      }
 
-
+     .main-cont {
+         padding-top: 94px;
+         padding-bottom: 94px;
+         min-width: 1200px;
+     }
  }
+
+
 
  //  .main-cont {
  //      padding-top: 94px;
