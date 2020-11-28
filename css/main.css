@@ -1254,4 +1254,18 @@ img {
   display: flex;
   align-items: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .form-title {
+    line-height: 1.5;
+  }
+  .policy-field label {
+    font-size: 12px;
+    line-height: 1.166;
+    padding-left: 0;
+  }
+  .comment {
+    width: 370px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
