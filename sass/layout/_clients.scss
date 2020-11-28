@@ -1,38 +1,74 @@
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .clients {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      min-width: 450px;
 
-    &-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+      &-list {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+      }
 
-}
+      &-block:not(:nth-last-child(-n+2)) {
+          margin-bottom: 30px;
+      }
 
-.clients-link {
-    height: 90px;
-    width: 170px;
-    border: 1px solid #afb1b8;
-    fill: #afb1b8;
-    border-radius: 4px;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property: border, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &-link {
+          height: 90px;
+          width: 210px;
+          border: 1px solid #afb1b8;
+          fill: #afb1b8;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition-property: border, fill;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover svg,
-    &:hover,
-    &:focus svg,
-    &:focus {
-        fill: $blue-text-color;
-    }
+          &:hover svg,
+          &:hover,
+          &:focus svg,
+          &:focus {
+              fill: $blue-text-color;
+          }
 
-    &:hover,
-    &:focus {
-        border: 1px solid $blue-text-color;
-    }
-}
+          &:hover,
+          &:focus {
+              border: 1px solid $blue-text-color;
+          }
+      }
+  }
+
+  @media screen and (min-width:768px) {
+
+      .clients {
+          &-link {
+              width: 226px;
+          }
+
+          &-block {
+              margin-bottom: 30px;
+          }
+      }
+  }
+
+  @media screen and (min-width:1200px) {
+      .clients {
+          padding-top: 94px;
+          padding-bottom: 94px;
+
+          &-list {
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+              align-items: center;
+          }
+
+      }
+
+      .clients-link {
+          width: 170px;
+      }
+  }

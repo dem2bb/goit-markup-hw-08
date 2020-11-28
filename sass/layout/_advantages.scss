@@ -1,6 +1,7 @@
 .advantages {
     padding-top: 60px;
     padding-bottom: 60px;
+    min-width: 480px;
 
     &-list {
         margin: 0;
@@ -83,6 +84,9 @@
         justify-content: space-between;
     }
 
+    .section-title {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -99,6 +103,10 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    .section-title {
+        text-align: left;
     }
 }
 
