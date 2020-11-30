@@ -49,8 +49,11 @@
 
 
 .menu-container {
+    z-index: 1;
+
     &.is-open {
         display: block;
+
     }
 
     @media screen and (max-width:767px) {
@@ -259,6 +262,9 @@
 }
 
 @media screen and (min-width:1200px) {
+    .page-header {
+        padding-bottom: 19px;
+    }
 
     .header-main-cont {
         justify-content: space-between;
@@ -285,6 +291,6 @@
 
     .current::before {
         width: 100%;
-        bottom: -23px;
+        bottom: -42px;
     }
 }

@@ -101,6 +101,10 @@ img {
   display: none;
 }
 
+.menu-container {
+  z-index: 1;
+}
+
 .menu-container.is-open {
   display: block;
 }
@@ -297,6 +301,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .page-header {
+    padding-bottom: 19px;
+  }
   .header-main-cont {
     justify-content: space-between;
   }
@@ -317,7 +324,7 @@ img {
   }
   .current::before {
     width: 100%;
-    bottom: -23px;
+    bottom: -42px;
   }
 }
 
